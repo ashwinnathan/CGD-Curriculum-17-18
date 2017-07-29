@@ -58,10 +58,10 @@ function draw() {
 	colorRect(0,0, canvas.width, canvas.height, 'black')
 	colorCirc(ballX,ballY, 10, 'white');
 	colorRect(paddleX, canvas.height - PADDLE_DIST_FROM_EDGE, PADDLE_WIDTH, PADDLE_THICKNESS, 'white');
+}
 function ballReset() {
 	ballX = canvas.width/2;
 	ballY = canvas.height/2;
-}
 }
 function move() {
 	ballX += ballSpeedX;
